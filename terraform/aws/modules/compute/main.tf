@@ -137,6 +137,6 @@ resource "aws_instance" "km_hm"{
   vpc_security_group_ids = [ var.elb_sg ]
   subnet_id = var.public_subnet[0]
   tags = merge(var.default_tags, {
-    Name = "km_vm_${var.environment}"
+    Name = "km_hm_${var.environment}"
   })
 }
