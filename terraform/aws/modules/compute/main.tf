@@ -138,5 +138,7 @@ resource "aws_instance" "km_hm"{
   subnet_id = var.public_subnet[0]
   tags = merge(var.default_tags, {
     Name = "km_hm_${var.environment}"
+    Owner = "Ops"
+
   })
 }
